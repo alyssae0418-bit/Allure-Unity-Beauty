@@ -1,0 +1,1956 @@
+/* ==============================
+   ALLURE UNITY & BEAUTY
+   MAIN STYLES
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #402019;
+    background: #fffdf1;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ==============================
+   COLORS
+================================= */
+
+:root {
+
+    --brown: #402019;
+
+    --pink: #f4b7d7;
+
+    --cream: #fffdf1;
+
+    --green: #c7d64b;
+
+    --light-pink: #f8cee5;
+
+    --dark-pink: #e99bc3;
+
+}
+
+
+/* ==============================
+   NAVIGATION
+================================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--brown);
+    color: white;
+    box-shadow: 0 3px 15px rgba(0,0,0,.15);
+}
+
+.nav-container {
+    width: min(1200px, 92%);
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 0;
+}
+
+.logo-text {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 1;
+}
+
+.logo-text span {
+    display: block;
+    color: var(--pink);
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    font-weight: bold;
+    font-size: 14px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: var(--pink);
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* ==============================
+   GENERAL
+================================= */
+
+.section-container {
+    width: min(1100px, 90%);
+    margin: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.section-label {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 3px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+}
+
+h2 {
+    font-size: clamp(45px, 7vw, 85px);
+    line-height: .95;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+/* ==============================
+   BUTTON
+================================= */
+
+.button {
+    display: inline-block;
+
+    background: var(--brown);
+    color: white;
+
+    padding: 14px 25px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    border: 2px solid var(--brown);
+
+    transition: .3s;
+}
+
+.button:hover {
+    background: transparent;
+    color: var(--brown);
+    transform: translateY(-3px);
+}
+
+.button-outline {
+    background: transparent;
+    color: var(--brown);
+}
+
+.button-outline:hover {
+    background: var(--brown);
+    color: white;
+}
+
+
+/* =========================
+   HOME HERO
+========================= */
+
+.hero {
+    background: #efa8cf;
+    min-height: calc(100vh - 110px);
+    padding: 55px 20px 80px;
+}
+
+.hero-content {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* =========================
+   HERO LOGO
+========================= */
+
+.hero-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.hero-logo img {
+    width: min(500px, 85vw);
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+
+/* =========================
+   HERO TEXT
+========================= */
+
+.hero-text {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-text .section-label {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 {
+    font-size: clamp(42px, 5vw, 78px);
+    line-height: 1;
+    font-weight: 900;
+    margin: 0 0 30px;
+    color: #4b2018;
+
+    white-space: nowrap;
+}
+
+.hero-description {
+    max-width: 650px;
+    margin: 0 auto 18px;
+
+    font-size: 19px;
+    line-height: 1.6;
+    color: #4b2018;
+}
+
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.hero-buttons {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-buttons .btn {
+    display: inline-block;
+    padding: 16px 28px;
+    border-radius: 50px;
+
+    background: #4b2018;
+    color: white;
+
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+    transform: translateY(-3px);
+}
+
+.hero-buttons .btn-outline {
+    background: transparent;
+    color: #4b2018;
+    border: 2px solid #4b2018;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 40px 20px 60px;
+    }
+
+    .hero-logo img {
+        width: min(400px, 90vw);
+    }
+
+    .hero-text h1 {
+        font-size: clamp(48px, 14vw, 70px);
+    }
+
+    .hero-description {
+        font-size: 17px;
+    }
+
+}
+
+/* ==============================
+   ABOUT
+================================= */
+
+.about {
+    background: var(--cream);
+}
+
+.about .section-container {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    height: 650px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 4px;
+}
+
+
+/* ==============================
+   SERVICES
+================================= */
+
+.services {
+    background: var(--green);
+}
+
+.section-heading {
+    margin-bottom: 60px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background: var(--cream);
+    padding: 35px;
+    border-radius: 3px;
+
+    transition: .3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-icon {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 17px;
+}
+
+
+/* ==============================
+   WINS
+================================= */
+
+.wins {
+    background: var(--pink);
+}
+
+.wins-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.project-card {
+    background: var(--cream);
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 35px;
+}
+
+.project-content h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.project-content p {
+    margin-bottom: 25px;
+}
+
+
+/* ==============================
+   MAGIC HANDS
+================================= */
+
+.magic-hands {
+    background: var(--cream);
+}
+
+.magic-hands h2 {
+    margin-bottom: 40px;
+}
+
+.event-header {
+    background: var(--brown);
+    color: var(--pink);
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.event-header h3 {
+    font-size: clamp(35px, 6vw, 70px);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+    transition: .3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+
+/* ==============================
+   FOUNDER
+================================= */
+
+.founder {
+    background: var(--brown);
+    color: var(--cream);
+    text-align: center;
+}
+
+.founder-content {
+    width: min(750px, 90%);
+    margin: auto;
+}
+
+.founder h2 {
+    color: var(--pink);
+    margin-bottom: 30px;
+}
+
+.founder p:last-child {
+    font-size: 24px;
+}
+
+
+/* ==============================
+   FUNDRAISER
+================================= */
+
+.fundraiser {
+    background: var(--green);
+}
+
+.fundraiser-box {
+    background: var(--cream);
+    padding: 45px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.fundraiser-box h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.donation-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.donation-options div {
+    background: var(--pink);
+    padding: 20px;
+    text-align: center;
+}
+
+.donation-options strong {
+    display: block;
+    font-size: 35px;
+}
+
+.donation-options span {
+    font-weight: bold;
+}
+
+
+/* ==============================
+   CALENDAR
+================================= */
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border: 1px solid #aaa;
+}
+
+.calendar-day {
+    background: var(--brown);
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.calendar button {
+    min-height: 70px;
+    border: 1px solid #aaa;
+    background: white;
+    cursor: pointer;
+    color: var(--brown);
+    font-weight: bold;
+}
+
+.calendar button:hover {
+    background: var(--pink);
+}
+
+.payment {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.small-text {
+    margin-top: 15px;
+    font-style: italic;
+}
+
+
+/* ==============================
+   SPONSORS
+================================= */
+
+.sponsors {
+    background: var(--brown);
+    color: var(--cream);
+    text-align: center;
+}
+
+.sponsors h2 {
+    color: var(--pink);
+}
+
+.sponsor-subtitle {
+    margin-top: 15px;
+}
+
+.sponsor-grid {
+    margin-top: 60px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.sponsor-card {
+    background: white;
+    color: var(--brown);
+    min-height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+}
+
+.sponsor-card h3 {
+    font-size: 38px;
+}
+
+.sponsor-card p {
+    font-weight: bold;
+}
+
+
+/* ==============================
+   CONTACT
+================================= */
+
+.contact {
+    background: var(--brown);
+    color: var(--cream);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+
+.contact-info h2 {
+    color: var(--pink);
+    margin-bottom: 30px;
+}
+
+.contact-info > p {
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    background: var(--green);
+    color: var(--brown);
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.contact-details p {
+    margin: 7px 0;
+    font-size: 16px;
+}
+
+.contact-form {
+    background: var(--cream);
+    color: var(--brown);
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-top: 7px;
+
+    border: 1px solid #aaa;
+    font-size: 16px;
+
+    font-family: inherit;
+}
+
+.contact-form .button {
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+
+/* ==============================
+   FOOTER
+================================= */
+
+footer {
+    background: #2b120d;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.footer-logo {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.footer-logo span {
+    color: var(--pink);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.footer-links a:hover {
+    color: var(--pink);
+}
+
+.copyright {
+    font-size: 14px;
+    opacity: .7;
+}
+
+
+/* ==============================
+   MOBILE
+================================= */
+
+@media (max-width: 800px) {
+
+    .menu-button {
+        display: block;
+    }
+
+    nav {
+        display: none;
+
+        position: absolute;
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        background: var(--brown);
+
+        flex-direction: column;
+
+        padding: 25px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .hero-content,
+    .about .section-container {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 70px;
+    align-items: center;
+}
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero-image {
+        order: -1;
+    }
+
+    .service-grid,
+    .wins-grid,
+    .sponsor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .donation-options {
+        grid-template-columns: 1fr;
+    }
+
+    .calendar-day {
+        font-size: 11px;
+        padding: 8px 2px;
+    }
+
+    .calendar button {
+        min-height: 50px;
+    }
+
+    section {
+        padding: 70px 0;
+    }
+
+
+
+
+@media (max-width: 500px) {
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .fundraiser-box {
+        padding: 25px 15px;
+    }
+
+}
+.event-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+.btn {
+    display: inline-block;
+    background-color: #4b2118;
+    color: white;
+    padding: 16px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* ========================================
+   ABOUT PAGE
+======================================== */
+
+.about-page {
+    background: #fffdf3;
+    min-height: calc(100vh - 120px);
+    padding: 80px 10%;
+}
+
+.about-section {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 4px;
+}
+
+.about-text .section-label {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #e99ac4;
+    margin-bottom: 15px;
+}
+
+.about-text h1 {
+    font-size: clamp(45px, 5vw, 78px);
+    line-height: 0.95;
+    color: #4a2119;
+    margin: 0 0 35px;
+    font-weight: 900;
+}
+
+.about-text p {
+    color: #4a2119;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .about-page {
+        padding: 50px 25px;
+    }
+
+    .about-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-image img {
+        margin: 0 auto;
+    }
+
+    .about-text h1 {
+        font-size: 45px;
+    }
+}
+
+/* =========================
+   INDIVIDUAL PAGE LAYOUT
+========================= */
+
+.services-page {
+    background: #fffdf4;
+    min-height: calc(100vh - 115px);
+    padding: 70px 10%;
+}
+
+.services-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-section .section-label {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: #4a2118;
+    margin-bottom: 20px;
+}
+
+.services-section h1 {
+    font-size: clamp(48px, 6vw, 85px);
+    line-height: 0.95;
+    color: #4a2118;
+    margin: 0 0 30px;
+}
+
+.services-section > p:last-child {
+    max-width: 750px;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #4a2118;
+}
+
+/* =========================
+   SERVICES CARDS
+========================= */
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 65px;
+}
+
+.service-card {
+    background: #f3b1d2;
+    padding: 40px 32px;
+    min-height: 280px;
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(74, 33, 24, 0.15);
+}
+
+.service-number {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+    color: #4a2118;
+}
+
+.service-card h2 {
+    color: #4a2118;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.service-card p {
+    color: #4a2118;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* PHONE/TABLET */
+
+@media (max-width: 850px) {
+
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .services-page {
+        padding: 50px 7%;
+    }
+}
+/* =========================================
+   OUR WORK PAGE
+========================================= */
+
+.wins {
+    background: #fffdf3;
+    padding: 80px 20px 60px;
+}
+
+.wins .section-container,
+.magic-hands .section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wins .section-heading {
+    margin-bottom: 35px;
+}
+
+.wins .section-label,
+.magic-hands .section-label {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: #4b2118;
+    margin-bottom: 10px;
+}
+
+.wins .section-heading h2,
+.magic-hands h2 {
+    color: #4b2118;
+    font-size: clamp(48px, 6vw, 80px);
+    font-weight: 900;
+    line-height: 0.95;
+    margin: 0 0 35px;
+}
+
+
+/* PROJECT CARDS */
+
+.wins-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background: #f7b6d2;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.project-image {
+    width: 100%;
+    height: 230px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-card:first-child .project-image img {
+    object-fit: contain;
+    padding: 15px;
+}
+
+.project-content {
+    padding: 20px 15px 5px;
+}
+
+.project-content h3 {
+    color: #4b2118;
+    font-size: 25px;
+    line-height: 1.1;
+    margin-bottom: 12px;
+}
+
+.project-content p {
+    color: #4b2118;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 500px;
+    margin: 0 auto 20px;
+}
+
+
+/* VIEW PROJECT BUTTON */
+
+.project-content .btn {
+    display: inline-block;
+    background: #4b2118;
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 14px;
+
+    padding: 13px 45px;
+
+    border-radius: 30px;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.project-content .btn:hover {
+    background: #6b3023;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   MAGIC HANDS
+========================================= */
+
+.magic-hands {
+    background: #fffdf3;
+    padding: 40px 20px 100px;
+}
+
+.magic-hands h2 {
+    margin-bottom: 25px;
+}
+
+
+/* ONE COLLAGE IMAGE */
+
+.magic-collage {
+    width: 100%;
+    overflow: hidden;
+}
+
+.magic-collage img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .wins {
+        padding-top: 50px;
+    }
+
+    .wins-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wins .section-heading h2,
+    .magic-hands h2 {
+        font-size: 48px;
+    }
+
+    .project-image {
+        height: 220px;
+    }
+
+    .magic-hands {
+        padding-bottom: 60px;
+    }
+}
+/* =========================================
+   FUNDRAISER PAGE
+========================================= */
+
+.fundraiser-page {
+    background: #f7b6d2;
+    padding: 90px 20px;
+}
+
+.fundraiser-page .section-container,
+.donation-section .section-container,
+.fundraiser-message .section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fundraiser-page .section-label,
+.donation-section .section-label {
+    color: #4b2118;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+.fundraiser-page h1 {
+    color: #4b2118;
+    font-size: clamp(60px, 8vw, 105px);
+    font-weight: 900;
+    line-height: 0.9;
+    margin: 0 0 35px;
+}
+
+.fundraiser-intro {
+    color: #4b2118;
+    font-size: 20px;
+    line-height: 1.7;
+    max-width: 700px;
+}
+
+
+/* =========================================
+   DONATION SECTION
+========================================= */
+
+.donation-section {
+    background: #fffdf3;
+    padding: 100px 20px;
+}
+
+.donation-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.donation-info h2 {
+    color: #4b2118;
+    font-size: clamp(42px, 5vw, 68px);
+    font-weight: 900;
+    line-height: 1;
+    margin: 0 0 30px;
+}
+
+.donation-info p {
+    color: #4b2118;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 650px;
+    margin-bottom: 20px;
+}
+
+
+/* DONATION CARD */
+
+.donation-card {
+    background: #4b2118;
+    color: white;
+
+    padding: 50px 40px;
+
+    text-align: center;
+}
+
+.donation-card h3 {
+    color: #f7b6d2;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.donation-card p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+/* DONATION AMOUNTS */
+
+.donation-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+}
+
+.donation-options span {
+    background: #fffdf3;
+    color: #4b2118;
+
+    padding: 15px;
+
+    font-weight: 800;
+    font-size: 18px;
+
+    border-radius: 4px;
+}
+
+
+/* DONATE BUTTON */
+
+.donate-button {
+    display: inline-block;
+
+    background: #f7b6d2;
+    color: #4b2118;
+
+    text-decoration: none;
+
+    padding: 15px 45px;
+
+    border-radius: 30px;
+
+    font-weight: 900;
+    font-size: 15px;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.donate-button:hover {
+    background: white;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   BOTTOM MESSAGE
+========================================= */
+
+.fundraiser-message {
+    background: #4b2118;
+    color: white;
+
+    padding: 90px 20px;
+
+    text-align: center;
+}
+
+.fundraiser-message h2 {
+    color: #f7b6d2;
+
+    font-size: clamp(48px, 6vw, 80px);
+
+    line-height: 0.95;
+
+    margin-bottom: 25px;
+}
+
+.fundraiser-message p {
+    max-width: 650px;
+
+    margin: auto;
+
+    font-size: 19px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   FUNDRAISER MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .fundraiser-page {
+        padding: 60px 20px;
+    }
+
+    .donation-section {
+        padding: 60px 20px;
+    }
+
+    .donation-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .donation-card {
+        padding: 40px 25px;
+    }
+
+    .fundraiser-message {
+        padding: 60px 20px;
+    }
+
+}
+/* =========================================
+   ZELLE DONATION
+========================================= */
+
+.zelle-box {
+    max-width: 700px;
+    margin: 60px auto 0;
+    padding: 45px 35px;
+
+    background: #f7b6d2;
+    color: #4b2118;
+
+    text-align: center;
+}
+
+.zelle-box h3 {
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.zelle-box p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.zelle-label {
+    margin-top: 25px;
+    margin-bottom: 8px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.zelle-email {
+    display: inline-block;
+
+    color: #4b2118;
+    font-size: 20px;
+    font-weight: 900;
+
+    text-decoration: underline;
+
+    margin-bottom: 20px;
+}
+
+.zelle-note {
+    max-width: 520px;
+    margin: 10px auto 0;
+
+    font-size: 14px !important;
+}
+
+/* ZELLE EMAIL */
+
+.zelle-box .zelle-email {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    color: #f7b6d2 !important;
+
+    font-size: 19px !important;
+    font-weight: 800 !important;
+
+    text-decoration: underline !important;
+
+    margin: 15px auto 45px auto !important;
+
+    width: fit-content;
+
+    cursor: pointer !important;
+}
+
+.zelle-box .zelle-email:link,
+.zelle-box .zelle-email:visited {
+    color: #4b2118 !important;
+}
+
+.zelle-box .zelle-email:hover {
+    color: white !important;
+}
+
+.zelle-box .zelle-note {
+    margin-top: 0 !important;
+}
+
+/* Confirmation message */
+
+.zelle-note {
+    margin-top: 10px !important;
+
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 15px !important;
+    line-height: 1.6;
+}
+/* ZELLE EMAIL - ALWAYS VISIBLE & CLICKABLE */
+
+.zelle-box a.zelle-email {
+    display: block;
+
+    color: #f7b6d2 !important;
+
+    font-size: 20px;
+    font-weight: 800;
+
+    text-decoration: underline;
+
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+    cursor: pointer;
+}
+
+.zelle-box a.zelle-email:visited {
+    color: #f7b6d2 !important;
+}
+
+.zelle-box a.zelle-email:hover {
+    color: white !important;
+}
+
+.zelle-box a.zelle-email:active {
+    color: #f7b6d2 !important;
+}
+
+
+/* SPACE BEFORE CONFIRMATION MESSAGE */
+
+.zelle-note {
+    display: block;
+
+    margin: 0 auto !important;
+
+    max-width: 500px;
+
+    font-size: 15px !important;
+    line-height: 1.6;
+}
+/* =========================================
+   SPONSORS PAGE
+========================================= */
+
+.sponsors-page {
+    background: #f7b6d2;
+    padding: 90px 20px;
+}
+
+.sponsors-page .section-container,
+.current-sponsors .section-container,
+.become-sponsor .section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* HERO */
+
+.sponsors-page .section-label {
+    color: #4b2118;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+.sponsors-page h1 {
+    color: #4b2118;
+
+    font-size: clamp(65px, 8vw, 110px);
+    font-weight: 900;
+
+    line-height: 0.9;
+
+    margin: 0 0 35px;
+}
+
+.sponsors-intro {
+    color: #4b2118;
+
+    max-width: 700px;
+
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   CURRENT SPONSORS
+========================================= */
+
+.current-sponsors {
+    background: #fffdf3;
+
+    padding: 90px 20px 110px;
+}
+
+.sponsor-heading {
+    margin-bottom: 50px;
+}
+
+.current-sponsors .section-label {
+    color: #4b2118;
+
+    font-size: 18px;
+    font-weight: 800;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 15px;
+}
+
+.sponsor-heading h2 {
+    color: #4b2118;
+
+    font-size: clamp(48px, 6vw, 75px);
+    font-weight: 900;
+
+    line-height: 0.95;
+
+    margin: 0;
+}
+
+
+/* SPONSOR GRID */
+
+.sponsor-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* SPONSOR CARD */
+
+.sponsor-card {
+    background: #f7b6d2;
+
+    padding: 25px;
+
+    text-align: center;
+}
+
+.sponsor-logo {
+    height: 210px;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+}
+
+.sponsor-logo img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+.sponsor-card h3 {
+    color: #4b2118;
+
+    font-size: 24px;
+
+    margin-bottom: 12px;
+}
+
+.sponsor-card p {
+    color: #4b2118;
+
+    font-size: 16px;
+    line-height: 1.6;
+
+    max-width: 300px;
+
+    margin: 0 auto 10px;
+}
+
+
+/* =========================================
+   BECOME A SPONSOR
+========================================= */
+
+.become-sponsor {
+    background: #4b2118;
+
+    padding: 90px 20px;
+
+    text-align: center;
+}
+
+.become-sponsor .section-label {
+    color: #f7b6d2;
+
+    font-size: 18px;
+    font-weight: 800;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 15px;
+}
+
+.become-sponsor h2 {
+    color: #f7b6d2;
+
+    font-size: clamp(55px, 7vw, 90px);
+    font-weight: 900;
+
+    line-height: 0.9;
+
+    margin: 0 0 30px;
+}
+
+.become-sponsor p {
+    color: white;
+
+    max-width: 650px;
+
+    margin: 0 auto 35px;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* PARTNER BUTTON */
+
+.sponsor-button {
+    display: inline-block;
+
+    background: #f7b6d2;
+    color: #4b2118 !important;
+
+    padding: 16px 45px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 900;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.sponsor-button:hover {
+    background: white;
+
+    color: #4b2118 !important;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   SPONSORS MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .sponsor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sponsor-card {
+        max-width: 550px;
+        width: 100%;
+
+        margin: 0 auto;
+    }
+
+    .sponsor-logo {
+        height: 190px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .sponsors-page {
+        padding: 60px 20px;
+    }
+
+    .current-sponsors {
+        padding: 60px 20px;
+    }
+
+    .become-sponsor {
+        padding: 60px 20px;
+    }
+
+    .sponsors-intro {
+        font-size: 17px;
+    }
+
+}
+/* ZELLE EMAIL FIX */
+
+.zelle-email,
+.zelle-email:link,
+.zelle-email:visited {
+    display: block !important;
+    color: #f4a6cf !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    text-align: center;
+    text-decoration: underline;
+    margin: 15px auto 55px auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.zelle-email:hover {
+    color: white !important;
+}
+
+.zelle-confirm {
+    margin-top: 0;
+}
+/* =========================
+   FUNDRAISER HERO
+========================= */
+
+.fundraiser-hero {
+    background: #f2add0;
+    padding: 70px 20px;
+}
+
+.fundraiser-hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    gap: 80px;
+}
+
+
+/* LEFT SIDE */
+
+.fundraiser-hero-text {
+    width: 100%;
+}
+
+.fundraiser-hero-text .section-label {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 6px;
+    color: #4b2018;
+
+    margin-bottom: 20px;
+}
+
+.fundraiser-hero-text h1 {
+    font-size: clamp(60px, 6vw, 90px);
+    line-height: 0.95;
+    font-weight: 900;
+    color: #4b2018;
+
+    margin: 0 0 30px;
+}
+
+.fundraiser-description {
+    max-width: 600px;
+
+    font-size: 19px;
+    line-height: 1.7;
+
+    color: #4b2018;
+}
+
+
+/* RIGHT SIDE IMAGE */
+
+.fundraiser-hero-image {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundraiser-hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 40px;
+    display: block;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .fundraiser-hero-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .fundraiser-hero {
+        padding: 50px 25px;
+    }
+
+    .fundraiser-hero-text h1 {
+        font-size: 55px;
+    }
+
+    .fundraiser-hero-image img {
+        height: auto;
+        max-width: 100%;
+    }
+}
